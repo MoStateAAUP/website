@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AAUP Chapter</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css"> <!-- Custom styles -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&family=EB+Garamond:wght@400;700&family=Merriweather:wght@400;700&family=Playfair+Display:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+
+
+<!-- Hamburger Menu Icon -->
+<div class="menu-icon" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  
+  <!-- Full-Screen Menu Overlay -->
+<div class="menu-overlay" id="menuOverlay" onclick="closeMenu(event)">
+    <nav class="menu-nav">
+      <ul>
+        <li><a href="#landing" onclick="navigateToSection(event, '#landing')">Home</a></li>
+        <li><a href="#who-we-are" onclick="navigateToSection(event, '#who-we-are')">Who We Are</a></li>
+        <li><a href="#what-we-do" onclick="navigateToSection(event, '#what-we-do')">What We Do</a></li>
+        <li><a href="#history" onclick="navigateToSection(event, '#history')">History</a></li>
+        <li><a href="#contact-us" onclick="navigateToSection(event, '#contact-us')">Contact Us</a></li>
+      </ul>
+    </nav>
+  </div>
+  
+  
+
+<!-- Landing Section -->
+<!--<section id="landing" class="landing d-flex align-items-center text-center">
+  <div class="container">
+    <h1 class="display-1 fw-bold mb-4">AAUP - Local Chapter</h1>
+    <p class="lead">Championing academic freedom, shared governance, and professional values.</p>
+    <img src="path-to-your-image.jpg" alt="AAUP Chapter" class="img-fluid rounded">
+  </div>
+</section>-->
+
+<!-- Landing Section -->
+<section id="landing" class="landing d-flex align-items-center text-center" id="landing">
+    <div class="container">
+    <div class="grain"></div>
+      <h1 class="display-1 fw-bold mb-4">AAUP @ Missouri State University</h1>
+      <h3>Local Chapter #666</h3>
+      <p class="lead">Championing academic freedom, shared governance, and professional values.</p>
+    </div>
+    <!-- Floating Letters Container -->
+    <div class="floating-letters"></div>
+  </section>
+  
+
+
+<!-- Who We Are Section -->
+<section class="who-we-are py-5 text-center" id="who-we-are">
+    <div class="container">
+      <h2 class="display-5 mb-4">Who We Are</h2>
+      <p class="lead">Our local chapter of the American Association of University Professors...</p>
+  
+      <!-- Two-Column Layout -->
+      <div class="row mt-4">
+        <div class="col-md-6 text-start">
+          <p>Lorem ipsum dolor sit amet, contingens quantum coniunctum esset. A priori assumptions notwithstanding, the prima facie data remains inconclusive.</p>
+        </div>
+        <div class="col-md-6 text-start">
+          <p>In examining homo academicus (Bourdieu, 1984), one must not overlook the Freudian slip hypothesis. Arguably, this phenomenon represents not a minor peccadillo...</p>
+        </div>
+      </div>
+    </div>
+    <div class="spacer"></div>
+  </section>
+  
+  <!-- Repeat similar structure for other sections -->
+  
+
+<!-- What We Do Section -->
+<section id="what-we-do" class="what-we-do py-5 text-center bg-light">
+    <div class="container">
+      <h2 class="display-5 mb-4">What We Do</h2>
+      <p class="lead">As professors, we strive tirelessly to shape the minds of tomorrow, mostly by engaging in processes that are as enigmatic as they are labyrinthine.</p>
+  
+      <!-- Two-Column Layout with Academic Humor Text -->
+      <div class="row mt-4">
+        <div class="col-md-6 text-start">
+          <p><strong>Endless Committee Meetings:</strong> Much of our time is spent in carefully scheduled committee meetings, each with an agenda that spans everything from “suggested font sizes for departmental memos” to the “ongoing exploration of coffee machine reliability.” Consensus is often reached only after prolonged debate on Robert’s Rules of Order, after which the original topic is tabled for “further research.”</p>
+          <p><strong>Research Proposal Marathons:</strong> Obtaining research funding is a delicate art, involving the perfect blend of scientific jargon, optimistic promises of groundbreaking discovery, and strategic use of buzzwords like “interdisciplinary synergy” and “data-driven.” The true mastery lies in submitting this proposal at precisely 11:59 PM, an hour universally accepted as Peak Academic Productivity.</p>
+        </div>
+        <div class="col-md-6 text-start">
+          <p><strong>Syllabus Optimization:</strong> Crafting the perfect syllabus is an annual event, requiring weeks of careful language adjustments to ensure students understand that “suggested readings” are, in fact, mandatory. This includes footnotes on the footnotes, as well as reminders about “office hours,” which are largely attended by faculty members in search of chocolate.</p>
+          <p><strong>Peer Review Mysteries:</strong> The peer review process remains shrouded in mystery, a scholarly rite of passage that often involves receiving feedback such as “this analysis lacks robustness” or “consider exploring other disciplines.” Scholars cherish the thrill of waiting months to be told to “please resubmit with major revisions”—a phrase that echoes in academia like a rallying cry.</p>
+        </div>
+      </div>
+    </div>
+    <div class="spacer"></div>
+  </section>
+  
+
+<!-- History Section -->
+<section id="history" class="history py-5 text-center">
+    <div class="container">
+      <h2 class="display-5 mb-4">Our History</h2>
+      <p class="lead">The history of our chapter dates back to the early days of academia, where theories, discussions, and caffeinated debates were forged in the crucible of collegial discourse.</p>
+  
+      <!-- Three-Column Layout with Academic Humor Text -->
+      <div class="row mt-4">
+        <div class="col-md-4 text-start">
+          <p><strong>The Early Years:</strong> In 1892, scholars engaged in a heated debate on whether footnotes should be positioned at the bottom of the page or relegated to oblivion (also known as the appendix). This monumental discussion is rumored to have lasted three semesters, resulting in no fewer than 47 footnotes about footnotes.</p>
+        </div>
+        <div class="col-md-4 text-start">
+          <p><strong>The Rise of Peer Review:</strong> By 1957, our chapter pioneered the concept of “peer review,” where papers are scrutinized by an esteemed group of colleagues. Initially, however, “peer review” was shorthand for “let’s see who can find the most typos,” an art form perfected through fierce rivalry and red ink.</p>
+        </div>
+        <div class="col-md-4 text-start">
+          <p><strong>Modern Developments:</strong> Fast forward to today, where we’ve embraced technological advancements. A recent victory includes the installation of a coffee machine capable of sustaining the most challenging 8-hour dissertation defenses. Additionally, the chapter’s motto, “Publish or Publ-ishn’t,” now graces our quarterly newsletters.</p>
+        </div>
+      </div>
+    </div>
+    <div class="spacer"></div>
+  </section>
+  
+
+
+<!-- Contact Us Section -->
+<section id="contact-us" class="contact-us py-5 text-center bg-light" id="contact-us">
+    <div class="container">
+      <h2 class="display-5 mb-4">Contact Us</h2>
+      <p class="lead">Have questions? Want to get involved? Please fill out our contact form below!</p>
+      
+      <!-- Button to Google Form -->
+      <a href="https://forms.gle/YOUR_GOOGLE_FORM_LINK" target="_blank" class="btn btn-primary">Fill Out Contact Form</a>
+    </div>
+    <div class="spacer"></div>
+  </section>
+
+  <!-- Footer Section -->
+<footer id="footer" class="footer py-4 bg-dark text-white">
+    <div class="container">
+        <div class="spacer"></div>
+      <div class="row">
+        <!-- Navigation Links Column -->
+        <div class="col-md-4 mb-3">
+          <ul class="list-unstyled">
+            <li><a href="#landing" class="text-white">Home</a></li>
+            <li><a href="#who-we-are" class="text-white">Who We Are</a></li>
+            <li><a href="#what-we-do" class="text-white">What We Do</a></li>
+            <li><a href="#history" class="text-white">History</a></li>
+            <li><a href="#contact-us" class="text-white">Contact Us</a></li>
+          </ul>
+        </div>
+        
+        <!-- Organization Information Column -->
+        <div class="col-md-4 mb-3">
+          <h5>About Our Chapter</h5>
+          <p class="small">Founded in [Year of Inception], our AAUP chapter at Missouri State University advocates for academic freedom, shared governance, and the professional rights of faculty members.</p>
+          <p class="small">&copy; [Current Year] AAUP - Missouri State University Chapter. All rights reserved.</p>
+        </div>
+        
+        <!-- Relevant Links Column -->
+        <div class="col-md-4 mb-3">
+          <h5>Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="https://www.aaup.org/" target="_blank" class="text-white">AAUP National Website</a></li>
+            <li><a href="https://www.aaup.org/our-chapters/states/missouri" target="_blank" class="text-white">Missouri AAUP Chapter</a></li>
+            <li><a href="#impressum" class="text-white">Impressum</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/scripts.js"></script> <!-- Custom scripts -->
+</body>
+</html>
