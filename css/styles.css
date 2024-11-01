@@ -293,13 +293,10 @@ position: relative; /* Make sure the z-index applies */
   body h1, body h2 {
     margin: 75px auto;
     padding: 0;
-    width: 95vw;
   }
   body h2 {
     margin: 50px auto;
     padding: 0;
-    width: 95vw;
-
   }
   body .image {
     position: fixed;
