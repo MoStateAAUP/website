@@ -18,7 +18,7 @@ function toggleMenu() {
   
 
   const floatingLettersContainer = document.querySelector('.floating-letters');
-  const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()[]{}";
+  const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()[]{}=+<>,.?/~|";
   const numLetters = 80;
   let mouseX = window.innerWidth / 2; // Initial mouse position in the center
   let mouseY = window.innerHeight / 2;
